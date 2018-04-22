@@ -3,9 +3,6 @@
 
 using namespace std;
 
-string getPassword();
-bool valid(string);
-
 int main()
 {
   string original, backup;
@@ -17,6 +14,7 @@ int main()
   cout<<"\nBackup password: ";
   backup = getPassword();
 
+  //validates that neither password is literally "password"
   if( valid(original) && valid(backup) )
   {
     cout<<"\nThank you.\n";
@@ -28,19 +26,3 @@ int main()
   return 0;
 }
 
-string getPassword()
-{
-  string entry;
-  do
-  {
-    cin>>entry;
-    if( entry.size() < 8 )
-        cout<<"Password must be at least 8 characters long.\n";
-  }while( entry.size() < 8 );
-  return entry;
-}
-
-bool valid(string val)
-{
-  return val != "password";
-}

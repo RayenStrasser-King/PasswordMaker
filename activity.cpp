@@ -25,6 +25,7 @@ vector<Book*> addBook(vector<Book*> name)
 
                 }
         }
+        cout<<endl;
         return name;
 }
 
@@ -35,8 +36,9 @@ void displayBooks (vector<Book*> books)
         for (int i = 0; i < books.size(); i++)
         {
                 cout<<"index = "<<i<<" TITLE = "<<books[i]->getTitle()<<endl;
-                cout<<"          YEAR = "<<books[i]->getYear()<<endl;
+                cout<<"          YEAR  = "<<books[i]->getYear()<<endl;
         }
+        cout<<endl;
 }
 
 vector<Book*> deleteBook(vector<Book*> books)

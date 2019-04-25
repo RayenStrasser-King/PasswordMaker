@@ -25,6 +25,7 @@ vector<Book*> addBook(vector<Book*> name)
 
                 }
         }
+        cout<<endl;
         return name;
 }
 

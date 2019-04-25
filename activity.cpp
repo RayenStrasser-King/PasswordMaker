@@ -25,7 +25,6 @@ vector<Book*> addBook(vector<Book*> name)
 
                 }
         }
-        cout<<endl;
         return name;
 }
 
@@ -56,5 +55,6 @@ vector<Book*> deleteBook(vector<Book*> books)
                         books.erase(books.begin() + i);
                 }
         }
+        cout<<endl;
         return books;
 }

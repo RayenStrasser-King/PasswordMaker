@@ -39,7 +39,6 @@ void displayBooks (vector<Book*> books)
                 cout<<"          YEAR  = "<<books[i]->getYear()<<endl;
         }
 }
-cout<<endl;
 
 vector<Book*> deleteBook(vector<Book*> books)
 {

@@ -43,6 +43,7 @@ void displayBooks (vector<Book*> books)
 vector<Book*> deleteBook(vector<Book*> books)
 {
         string name;
+        cout<<endl;
         cout<<"DELETE: Please enter the book title to be deleted."<<endl;
         getline(cin,name);
 
